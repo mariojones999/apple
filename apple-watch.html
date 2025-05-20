@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="了解 Apple Watch Series 10 的全新功能，选购你喜爱的颜色和尺寸。">
+  <title>Apple Watch Series 10 - Apple (中国大陆)</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar" role="navigation" aria-label="主导航">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="index.html" aria-label="Apple 主页"><i class="fab fa-apple"></i></a>
+      </div>
+      <button class="nav-toggle" aria-label="切换导航" aria-expanded="false" type="button">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-list">
+        <li class="nav-item has-dropdown">
+          <a href="../苹果16商品详情页面/home.html" class="nav-link" aria-haspopup="true" aria-expanded="false">商店</a>
+          <ul class="dropdown" role="menu">
+            <li><a href="../苹果16商品详情页面/home.html" role="menuitem">浏览全部</a></li>
+            <li><a href="#deals" role="menuitem">优惠活动</a></li>
+            <li><a href="#accessories" role="menuitem">配件</a></li>
+          </ul>
+        </li>
+        <li class="nav-item has-dropdown">
+          <a href="macbook-air.html" class="nav-link" aria-haspopup="true" aria-expanded="false">Mac</a>
+          <ul class="dropdown" role="menu">
+            <li><a href="macbook-air.html" role="menuitem">MacBook Air</a></li>
+            <li><a href="#macbook-pro" role="menuitem">MacBook Pro</a></li>
+            <li><a href="#imac" role="menuitem">iMac</a></li>
+            <li><a href="#mac-mini" role="menuitem">Mac mini</a></li>
+          </ul>
+        </li>
+        <li class="nav-item has-dropdown">
+          <a href="ipad-pro.html" class="nav-link" aria-haspopup="true" aria-expanded="false">iPad</a>
+          <ul class="dropdown" role="menu">
+            <li><a href="ipad-pro.html" role="menuitem">iPad Pro</a></li>
+            <li><a href="#ipad-air" role="menuitem">iPad Air</a></li>
+            <li><a href="#ipad-mini" role="menuitem">iPad mini</a></li>
+          </ul>
+        </li>
+        <li class="nav-item has-dropdown">
+          <a href="index.html" class="nav-link" aria-haspopup="true" aria-expanded="false">iPhone</a>
+          <ul class="dropdown" role="menu">
+            <li><a href="index.html" role="menuitem">iPhone 16</a></li>
+            <li><a href="#iphone-16-pro" role="menuitem">iPhone 16 Pro</a></li>
+            <li><a href="#iphone-15" role="menuitem">iPhone 15</a></li>
+          </ul>
+        </li>
+        <li class="nav-item has-dropdown">
+          <a href="apple-watch.html" class="nav-link " aria-current="page" aria-haspopup="true" aria-expanded="false">Watch</a>
+          <ul class="dropdown" role="menu">
+            <li><a href="#watch-ultra" role="menuitem">Apple Watch Ultra</a></li>
+            <li><a href="apple-watch.html" role="menuitem">Apple Watch Series</a></li>
+          </ul>
+        </li>
+        <li class="nav-item has-dropdown">
+          <a href="airpods-pro.html" class="nav-link " aria-current="page" aria-haspopup="true" aria-expanded="false">AirPods</a>
+          <ul class="dropdown" role="menu">
+            <li><a href="airPods pro" role="menuitem">AirPods pro</a></li>
+            <li><a href="airpods-pro.html" role="menuitem">AirPos pro 2</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="#home" class="nav-link">家居</a></li>
+        <li class="nav-item"><a href="#entertainment" class="nav-link">娱乐</a></li>
+        <li class="nav-item"><a href="#accessories" class="nav-link">配件</a></li>
+        <li class="nav-item"><a href="service.html" class="nav-link">技术支持</a></li>
+        <li class="nav-item">
+          <a href="#search" class="nav-link" aria-label="搜索"><i class="fas fa-search"></i></a>
+        </li>
+        <li class="nav-item cart-icon">
+          <a href="#cart" class="nav-link" aria-label="购物袋">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="cart-count" id="cartCount">0</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 购物车浮层 -->
+  <div class="cart-modal" id="cartModal" role="dialog" aria-labelledby="cartModalTitle" aria-hidden="true">
+    <div class="cart-modal-content">
+      <div class="cart-modal-header">
+        <h2 id="cartModalTitle">购物袋</h2>
+        <button class="cart-modal-close" aria-label="关闭购物袋" type="button">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="cart-modal-body" id="cartItems">
+        <!-- 动态插入购物车内容 -->
+      </div>
+      <div class="cart-modal-footer">
+        <p>总计: <span id="cartTotal">RMB 0</span></p>
+        <button class="cart-checkout-btn" type="button">去结算</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 产品导航 -->
+  <div class="product-nav" role="navigation" aria-label="产品导航">
+    <div class="container">
+      <h2>Apple Watch Series 10</h2>
+      <ul>
+        <li><a href="#" class="active" aria-current="page">概览</a></li>
+        <li><a href="#features">功能</a></li>
+        <li><a href="#specs">技术规格</a></li>
+        <li><a href="#buy">购买</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 产品横幅 -->
+  <div class="hero-watch">
+    <div class="hero-content">
+      <video width="100%" height="auto" autoplay muted loop playsinline>
+        <source src="./vedio/1.mp4" type="video/mp4">
+      </video>
+      <h1 class="hero-title">Apple Watch Series 10</h1>
+      <h2 class="hero-subtitle">健康与连接的巅峰</h2>
+      <p class="hero-price">RMB 3,199 起</p>
+      <a href="#buy" class="hero-link">购买 <i class="fas fa-chevron-right"></i></a>
+    </div>
+  </div>
+
+  <!-- 快速链接 -->
+  <div class="quick-links">
+    <div class="container">
+      <a href="#delivery"><i class="fas fa-truck"></i> 免费送货</a>
+      <a href="#engraving"><i class="fas fa-box-open"></i> 免费个性化镌刻</a>
+      <a href="#installments"><i class="fas fa-redo"></i> 最高24期分期免息</a>
+      <a href="#trade-in"><i class="fas fa-exchange-alt"></i> 以旧换新</a>
+    </div>
+  </div>
+
+  <!-- 产品亮点 -->
+  <section class="highlights section" aria-labelledby="highlights-title">
+    <div class="container">
+      <h2 id="highlights-title" class="section-title">产品亮点</h2>
+      <div class="highlight-grid">
+        <div class="highlight-item">
+          <h3>超大显示屏</h3>
+          <p>更清晰的显示效果</p>
+        </div>
+        <div class="highlight-item">
+          <h3>健康监测</h3>
+          <p>血氧、心电图、睡眠追踪</p>
+        </div>
+        <div class="highlight-item">
+          <h3>钛金属表壳</h3>
+          <p>轻盈耐用，时尚设计</p>
+        </div>
+        <div class="highlight-item">
+          <h3>快速充电</h3>
+          <p>30分钟充电至80%</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 颜色选择 -->
+  <section class="color-selection section" aria-labelledby="color-selection-title">
+    <div class="container">
+      <h2 id="color-selection-title">两种惊艳外观</h2>
+      <p>选择你心仪的颜色</p>
+      <div class="color-options">
+        <!-- 钛金属 -->
+        <input type="radio" id="titanium" name="color" class="color-input" checked>
+        <label for="titanium" class="color-option" role="button" aria-label="选择钛金属" tabindex="0" data-color="titanium">
+          <div class="color-circle" style="background-color: #D9D9D9;"></div>
+          <span>钛金属</span>
+        </label>
+        <!-- 黑色钛金属 -->
+        <input type="radio" id="black-titanium" name="color" class="color-input">
+        <label for="black-titanium" class="color-option" role="button" aria-label="选择黑色钛金属" tabindex="0" data-color="black-titanium">
+          <div class="color-circle" style="background-color: #333333;"></div>
+          <span>黑色钛金属</span>
+        </label>
+      </div>
+    </div>
+  </section>
+
+  <!-- 产品展示 -->
+  <section class="product-showcase section" aria-labelledby="showcase-title">
+    <div class="container">
+      <h2 id="showcase-title" class="section-title">探索功能</h2>
+      <div class="showcase-container">
+        <div class="showcase-image" id="showcaseImage">
+          <img src="./image/screen.jpg" alt="Apple Watch Series 10 钛金属" id="mainProductImage" loading="lazy">
+        </div>
+        <div class="showcase-features">
+          <div class="feature active" data-image="./image/screen.jpg" data-feature="display" role="button" aria-label="查看超大显示屏" tabindex="0">
+            <h3>超大显示屏</h3>
+            <p>边框更窄，显示面积提升 10%</p>
+          </div>
+          <div class="feature" data-image="./image/health.jpg" data-feature="health" role="button" aria-label="查看健康监测" tabindex="0">
+            <h3>健康监测</h3>
+            <p>支持血氧、心率、睡眠全面监测</p>
+          </div>
+          <div class="feature" data-image="../苹果16商品详情页面/image/battary.png" data-feature="charging" role="button" aria-label="查看快速充电" tabindex="0">
+            <h3>快速充电</h3>
+            <p>30分钟充电至80%，全天续航</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 购买区域 -->
+  <section class="buy-section section" id="buy" aria-labelledby="buy-title">
+    <div class="container">
+      <h2 id="buy-title">选择你喜欢的机型</h2>
+      
+      <div class="model-selector">
+        <div class="model-option active" data-model="watch-series10" role="button" aria-label="选择 Apple Watch Series 10" tabindex="0">
+          <h3>Apple Watch Series 10</h3>
+          <p>钛金属表壳</p>
+          <p>RMB 3,199 起</p>
+        </div>
+      </div>
+
+      <div class="storage-options">
+        <h3>选择尺寸</h3>
+        <div class="storage-grid">
+          <div class="storage-option active" data-storage="42" role="button" aria-label="选择 42mm" tabindex="0">
+            <h4>42mm</h4>
+            <p>RMB 3,199</p>
+          </div>
+          <div class="storage-option" data-storage="46" role="button" aria-label="选择 46mm" tabindex="0">
+            <h4>46mm</h4>
+            <p>RMB 3,499</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="trade-in">
+        <h3>以旧换新，折抵优惠</h3>
+        <p>用你当前的 Apple Watch 折抵换购 Series 10，最高可享 RMB 2,000 优惠。</p>
+        <a href="#trade-in-estimate" class="trade-in-link">看看你的设备折抵多少 <i class="fas fa-chevron-right"></i></a>
+      </div>
+
+      <div class="delivery-options">
+        <h3>送货方式</h3>
+        <div class="delivery-option active" data-delivery="free-delivery" role="button" aria-label="选择免费送货" tabindex="0">
+          <i class="fas fa-truck"></i>
+          <div>
+            <h4>免费送货</h4>
+            <p>无接触送货，可提供在线跟踪</p>
+          </div>
+        </div>
+        <div class="delivery-option" data-delivery="store-pickup" role="button" aria-label="选择到店取货" tabindex="0">
+          <i class="fas fa-store"></i>
+          <div>
+            <h4>到店取货</h4>
+            <p>今天下单，今天取货</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="payment-options">
+        <h3>支付方式</h3>
+        <div class="payment-grid">
+          <div class="payment-option active" data-payment="credit-card" role="button" aria-label="选择信用卡分期付款" tabindex="0">
+            <i class="fas fa-credit-card"></i>
+            <p>信用卡分期付款</p>
+          </div>
+          <div class="payment-option" data-payment="alipay" role="button" aria-label="选择支付宝花呗分期" tabindex="0">
+            <i class="fas fa-money-bill-wave"></i>
+            <p>支付宝花呗分期</p>
+          </div>
+          <div class="payment-option" data-payment="bank" role="button" aria-label="选择银行分期付款" tabindex="0">
+            <i class="fas fa-university"></i>
+            <p>银行分期付款</p>
+          </div>
+          <div class="payment-option" data-payment="one-time" role="button" aria-label="选择一次性付款" tabindex="0">
+            <i class="fas fa-wallet"></i>
+            <p>一次性付款</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="add-to-bag">
+        <div class="price-summary">
+          <h3 id="selectedModel">Apple Watch Series 10</h3>
+          <p id="selectedConfig">42mm - 钛金属</p>
+          <p class="total-price">RMB 3,199</p>
+        </div>
+        <button class="add-to-bag-btn" aria-label="添加到购物袋" type="button">
+          <span class="btn-text">添加到购物袋</span>
+          <span class="btn-loading" aria-hidden="true"><i class="fas fa-spinner fa-spin"></i></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>选购及了解</h4>
+          <ul>
+            <li><a href="#store">商店</a></li>
+            <li><a href="macbook-air.html">Mac</a></li>
+            <li><a href="ipad-pro.html">iPad</a></li>
+            <li><a href="index.html">iPhone</a></li>
+            <li><a href="apple-watch.html">Watch</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>服务</h4>
+          <ul>
+            <li><a href="#apple-music">Apple Music</a></li>
+            <li><a href="#retail">Apple Store 零售店</a></li>
+            <li><a href="#genius-bar">Genius Bar 天才吧</a></li>
+            <li><a href="#today-at-apple">Today at Apple</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>关于 Apple</h4>
+          <ul>
+            <li><a href="#newsroom">Newsroom</a></li>
+            <li><a href="#leadership">Apple 管理层</a></li>
+            <li><a href="#careers">工作机会</a></li>
+            <li><a href="#events">活动</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>更多选购方式：<a href="#retail">查找你附近的 Apple Store 零售店</a> 及 <a href="#stores">更多门店</a>。</p>
+        <div class="legal-links">
+          <p>Copyright © 2025 Apple Inc. 保留所有权利。</p>
+          <ul>
+            <li><a href="#privacy">隐私政策</a></li>
+            <li><a href="#terms">使用条款</a></li>
+            <li><a href="#sales">销售政策</a></li>
+            <li><a href="#legal">法律信息</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="test.js"></script>
+  <script>
+    // 动态设置导航栏高亮
+    document.addEventListener('DOMContentLoaded', () => {
+      const navLinks = document.querySelectorAll('.nav-link');
+      navLinks.forEach(link => {
+        if (link.getAttribute('href') === 'apple-watch.html') {
+          link.classList.add('active');
+          link.setAttribute('aria-current', 'page');
+        } else {
+          link.classList.remove('active');
+          link.removeAttribute('aria-current');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="了解 Apple 的维修与支持服务，获取专业帮助，预约维修或查询网点。">
+    <title>Apple 支持与服务 - Apple (中国大陆)</title>
+    <link rel="stylesheet" href="../苹果16商品详情页面/reset.css">
+    <link rel="stylesheet" href="../苹果16商品详情页面/service.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar" role="navigation" aria-label="主导航">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" aria-label="Apple 主页"><i class="fab fa-apple"></i></a>
+            </div>
+            <button class="nav-toggle" aria-label="切换导航" aria-expanded="false" type="button">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-list">
+                <li class="nav-item has-dropdown">
+                    <a href="../苹果16商品详情页面/home.html" class="nav-link" aria-haspopup="true" aria-expanded="false">商店</a>
+                    <ul class="dropdown" role="menu">
+                        <li><a href="../苹果16商品详情页面/home.html" role="menuitem">浏览全部</a></li>
+                        <li><a href="#deals" role="menuitem">优惠活动</a></li>
+                        <li><a href="#accessories" role="menuitem">配件</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="macbook-air.html" class="nav-link" aria-haspopup="true" aria-expanded="false">Mac</a>
+                    <ul class="dropdown" role="menu">
+                        <li><a href="macbook-air.html" role="menuitem">MacBook Air</a></li>
+                        <li><a href="#macbook-pro" role="menuitem">MacBook Pro</a></li>
+                        <li><a href="#imac" role="menuitem">iMac</a></li>
+                        <li><a href="#mac-mini" role="menuitem">Mac mini</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="ipad-pro.html" class="nav-link" aria-haspopup="true" aria-expanded="false">iPad</a>
+                    <ul class="dropdown" role="menu">
+                        <li><a href="ipad-pro.html" role="menuitem">iPad Pro</a></li>
+                        <li><a href="#ipad-air" role="menuitem">iPad Air</a></li>
+                        <li><a href="#ipad-mini" role="menuitem">iPad mini</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="index.html" class="nav-link" aria-haspopup="true" aria-expanded="false">iPhone</a>
+                    <ul class="dropdown" role="menu">
+                        <li><a href="index.html" role="menuitem">iPhone 16</a></li>
+                        <li><a href="#iphone-16-pro" role="menuitem">iPhone 16 Pro</a></li>
+                        <li><a href="#iphone-15" role="menuitem">iPhone 15</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="apple-watch.html" class="nav-link" aria-haspopup="true" aria-expanded="false">Watch</a>
+                    <ul class="dropdown" role="menu">
+                        <li><a href="#watch-ultra" role="menuitem">Apple Watch Ultra</a></li>
+                        <li><a href="apple-watch.html" role="menuitem">Apple Watch Series</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="airpods-pro.html" class="nav-link" aria-haspopup="true" aria-expanded="false">AirPods</a>
+                    <ul class="dropdown" role="menu">
+                        <li><a href="airPods pro" role="menuitem">AirPods Pro</a></li>
+                        <li><a href="airpods-pro.html" role="menuitem">AirPods Pro 2</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#home" class="nav-link">家居</a></li>
+                <li class="nav-item"><a href="#entertainment" class="nav-link">娱乐</a></li>
+                <li class="nav-item"><a href="#accessories" class="nav-link">配件</a></li>
+                <li class="nav-item">
+                    <a href="service.html" class="nav-link active" aria-current="page">技术支持</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#search" class="nav-link" aria-label="搜索"><i class="fas fa-search"></i></a>
+                </li>
+                <li class="nav-item cart-icon">
+                    <a href="#cart" class="nav-link" aria-label="购物袋">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 页面标题 -->
+    <header class="hero-header">
+        <h1>Apple 支持与服务</h1>
+        <p>获取专业帮助，预约维修或查询附近服务网点</p>
+    </header>
+
+    <div class="container">
+        <!-- 快速服务通道 -->
+        <div class="service-card">
+            <h2>快速服务通道</h2>
+            <div class="search-box">
+                <input type="text" placeholder="输入您的问题或服务需求..." aria-label="搜索服务">
+                <button><i class="fas fa-search"></i> 搜索</button>
+            </div>
+        </div>
+
+        <!-- 维修与服务 -->
+        <h2 class="section-title">维修与服务</h2>
+        <div class="service-card">
+            <h2>设备维修</h2>
+            <ul class="service-list">
+                <li>
+                    <span>预约维修服务</span>
+                    <a href="https://support.apple.com/repair" class="btn btn-primary">立即预约</a>
+                </li>
+                <li>
+                    <span>维修进度查询</span>
+                    <a href="status.html" class="btn btn-outline">查询</a>
+                </li>
+                <li>
+                    <span>附近服务网点</span>
+                    <a href="#" class="btn btn-outline" id="find-stores-btn">查找网点</a>
+                </li>
+            </ul>
+            <div id="store-list" class="store-list" style="display: none;"></div>
+        </div>
+
+        <!-- 精选服务 -->
+        <h2 class="section-title">精选服务</h2>
+        <div class="featured-services">
+            <div class="featured-service">
+                <img src="./image/黑.webp" alt="屏幕维修" loading="lazy">
+                <div class="featured-service-content">
+                    <h3>屏幕维修服务</h3>
+                    <p>专业工程师为您更换原厂屏幕</p>
+                    <div class="price">¥899 起</div>
+                    <a href="https://support.apple.com/repair" class="btn btn-primary">立即预约</a>
+                </div>
+            </div>
+            <div class="featured-service">
+                <img src="./image/白.webp" alt="电池更换" loading="lazy">
+                <div class="featured-service-content">
+                    <h3>电池更换服务</h3>
+                    <p>原装电池，续航如新</p>
+                    <div class="price">¥599 起</div>
+                    <a href="https://support.apple.com/zh-cn/iphone/repair/battery-replacement" class="btn btn-primary">立即预约</a>
+                </div>
+            </div>
+            <div class="featured-service">
+                <img src="./image/绿.webp" alt="手机回收" loading="lazy">
+                <div class="featured-service-content">
+                    <h3>旧机回收估价</h3>
+                    <p>以旧换新，最高抵 ¥5999</p>
+                    <div class="price">免费估价</div>
+                    <a href="https://www.apple.com.cn/shop/trade-in" class="btn btn-primary">立即预约</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 其他服务 -->
+        <h2 class="section-title">其他服务</h2>
+        <div class="service-card">
+            <h2>客户支持</h2>
+            <ul class="service-list">
+                <li>
+                    <span>产品咨询</span>
+                    <a href="https://www.apple.com.cn/contact/" class="btn btn-outline">咨询</a>
+                </li>
+                <li>
+                    <span>使用指南</span>
+                    <a href="guide.html" class="btn btn-outline">查看</a>
+                </li>
+                <li>
+                    <span>社区支持</span>
+                    <a href="https://discussionschinese.apple.com/welcome" class="btn btn-outline">前往社区</a>
+                </li>
+                <li>
+                    <span>服务详情</span>
+                    <a href="#" id="serviceLink" class="btn btn-outline">查看详情</a>
+                </li>
+                <li>
+                    <span>联系客服</span>
+                    <a href="tel:4006668800" class="btn btn-outline phone-btn">400-666-8800</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>选购及了解</h4>
+                    <ul>
+                        <li><a href="#store">商店</a></li>
+                        <li><a href="macbook-air.html">Mac</a></li>
+                        <li><a href="ipad-pro.html">iPad</a></li>
+                        <li><a href="index.html">iPhone</a></li>
+                        <li><a href="apple-watch.html">Watch</a></li>
+                        <li><a href="airpods-pro.html">AirPods</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>服务</h4>
+                    <ul>
+                        <li><a href="#apple-music">Apple Music</a></li>
+                        <li><a href="#retail">Apple Store 零售店</a></li>
+                        <li><a href="#genius-bar">Genius Bar 天才吧</a></li>
+                        <li><a href="#today-at-apple">Today at Apple</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>关于 Apple</h4>
+                    <ul>
+                        <li><a href="#newsroom">Newsroom</a></li>
+                        <li><a href="#leadership">Apple 管理层</a></li>
+                        <li><a href="#careers">工作机会</a></li>
+                        <li><a href="#events">活动</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>更多选购方式：<a href="#retail">查找你附近的 Apple Store 零售店</a> 及 <a href="#stores">更多门店</a>。</p>
+                <div class="legal-links">
+                    <p>Copyright © 2025 Apple Inc. 保留所有权利。</p>
+                    <ul>
+                        <li><a href="#privacy">隐私政策</a></li>
+                        <li><a href="#terms">使用条款</a></li>
+                        <li><a href="#sales">销售政策</a></li>
+                        <li><a href="#legal">法律信息</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../苹果16商品详情页面/service.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // 查找附近网点
+            const findStoresBtn = document.getElementById('find-stores-btn');
+            const storeList = document.getElementById('store-list');
+
+            if (findStoresBtn && storeList) {
+                findStoresBtn.addEventListener('click', async (event) => {
+                    event.preventDefault();
+                    storeList.style.display = 'block';
+                    storeList.innerHTML = '<p class="loading-text"><i class="fas fa-spinner fa-spin"></i> 正在加载...</p>';
+
+                    try {
+                        console.log('开始获取 IP 位置...');
+                        const ipResponse = await fetch('https://ipinfo.io/json?token=your_ipinfo_token');
+                        if (!ipResponse.ok) throw new Error(`IP 请求失败: ${ipResponse.status}`);
+                        const ipData = await ipResponse.json();
+                        console.log('IP 数据:', ipData);
+                        const { loc } = ipData;
+                        if (!loc) throw new Error('未获取到地理位置');
+                        const [lat, lng] = loc.split(',');
+                        console.log('经纬度:', lat, lng);
+
+                        console.log('开始查询附近网点...');
+                        const googleApiKey = 'your_google_api_key';
+                        const radius = 5000;
+                        const keyword = 'Apple Store';
+                        const placesUrl = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${lat},${lng}&radius=${radius}&keyword=${keyword}&key=${googleApiKey}`;
+                        console.log('API 请求 URL:', placesUrl);
+
+                        const placesResponse = await fetch(placesUrl);
+                        if (!placesResponse.ok) throw new Error(`Places API 请求失败: ${placesResponse.status}`);
+                        const placesData = await placesResponse.json();
+                        console.log('Places 数据:', placesData);
+
+                        if (placesData.status !== 'OK') {
+                            storeList.innerHTML = `<p>API 状态: ${placesData.status}. 请检查 API 配置。</p>`;
+                            return;
+                        }
+
+                        const stores = placesData.results.slice(0, 5);
+                        if (stores.length === 0) {
+                            storeList.innerHTML = '<p>附近没有找到 Apple 服务网点。</p>';
+                            return;
+                        }
+
+                        storeList.innerHTML = stores.map(store => `
+                            <div class="store-item">
+                                <h4>${store.name}</h4>
+                                <p>${store.vicinity}</p>
+                                <p>评分：${store.rating || '暂无'} (${store.user_ratings_total || 0} 条评价)</p>
+                            </div>
+                        `).join('');
+                    } catch (error) {
+                        console.error('错误详情:', error);
+                        storeList.innerHTML = `<p>查询网点失败: ${error.message}</p>`;
+                    }
+                });
+            }
+
+            // 服务详情跳转
+            const serviceLink = document.getElementById("serviceLink");
+            if (serviceLink) {
+                serviceLink.addEventListener("click", function(event) {
+                    event.preventDefault();
+                    window.location.href = "service.html";
+                });
+            }
+
+            // 平滑滚动
+            document.querySelectorAll('a[href*="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    if (this.getAttribute('href').startsWith('#')) {
+                        e.preventDefault();
+                        const targetId = this.getAttribute('href').substring(1);
+                        const targetElement = document.getElementById(targetId);
+                        if (targetElement) {
+                            window.scrollTo({
+                                top: targetElement.offsetTop - 60,
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

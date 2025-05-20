@@ -1,0 +1,178 @@
+
+    /* 全局样式 */
+    :root {
+      --apple-blue: #0071e3;
+      --apple-dark-blue: #0066cc;
+      --apple-light-gray: #f5f5f7;
+      --apple-gray: #86868b;
+      --apple-dark-gray: #1d1d1f;
+      --apple-black: #000;
+      --apple-white: #fff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      color: var(--apple-dark-gray);
+      line-height: 1.5;
+      background-color: var(--apple-white);
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* 导航栏 */
+    .navbar {
+      top: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(20px);
+      z-index: 1000;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .nav-list {
+      display: flex;
+      list-style: none;
+      height: 44px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-list li a {
+      color: var(--apple-light-gray);
+      text-decoration: none;
+      font-size: 12px;
+      opacity: 0.8;
+      transition: opacity 0.3s;
+    }
+
+    .nav-list li a:hover {
+      opacity: 1;
+    }
+
+    .nav-list li i {
+      font-size: 16px;
+    }
+.hero {
+  height: 100vh;
+  background: linear-gradient(to bottom, #ffffff, #ffffff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--apple-white);
+  position: relative;
+  overflow: hidden;
+}
+    /* 居中容器 */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      color: var(--apple-white);
+    }
+
+    .hero img {
+      max-width: 100%;
+      max-height: 100px;
+      margin-top: 20px;
+    }
+    .hero h3 {
+        font-size: 60px;
+      font-weight: 300px;
+      color:#000;
+    }
+
+    .hero h5{
+      font-weight: 400;
+      color:#000;
+    }
+
+    /* 产品展示区 */
+    .products {
+      padding: 60px 0;
+      background-color: var(--apple-light-gray);
+    }
+
+    .products h2 {
+      font-size: 40px;
+      text-align: center;
+      margin-bottom: 40px;
+      color: var(--apple-dark-gray);
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .product-card {
+      background-color: var(--apple-white);
+      border-radius: 18px;
+      overflow: hidden;
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      height: 70%;
+      margin-bottom: 20px;
+    }
+
+    .product-card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .product-card p {
+      font-size: 10px;
+      color: var(--apple-gray);
+    }
+
+    /* 响应式设计 */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      .hero p {
+        font-size: 20px;
+      }
+
+      .hero a {
+        font-size: 18px;
+      }
+
+      .nav-list {
+        justify-content: space-around;
+      }
+
+      .nav-list li a {
+        font-size: 10px;
+      }
+    }
